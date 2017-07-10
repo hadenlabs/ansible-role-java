@@ -1,0 +1,10 @@
+---
+# vars file for hadenlabs.java (Ubuntu specific)
+
+_java_package_dependencies:
+  - build-essential
+  - git
+
+
+_java_packages:
+  - "openjdk-{{ java_version }}-jdk"

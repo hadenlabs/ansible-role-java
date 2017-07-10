@@ -1,0 +1,9 @@
+---
+# task for hadenlabs.java
+
+- name: copy templates
+  template:
+    src: "{{ item.src }}"
+    dest: "{{ item.dest }}"
+  with_items: _java.templates
+  when: _java.templates is defined

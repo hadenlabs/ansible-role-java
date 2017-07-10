@@ -1,0 +1,8 @@
+---
+# vars file for hadenlabs.java (CentOS specific)
+
+_java_package_dependencies:
+  - build-essential
+
+_java_packages:
+  - packages

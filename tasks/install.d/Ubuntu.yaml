@@ -1,0 +1,14 @@
+---
+
+# task file for hadenlabs.java
+
+- name: Ensure apt cache is up to date
+  apt:
+    update_cache: yes
+
+
+- name: Install java dependencies
+  apt: name={{ item }} state=present update_cache=yes
+  with_items: _java_packages
+  tags:
+    - java

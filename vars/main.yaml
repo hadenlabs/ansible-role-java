@@ -1,0 +1,15 @@
+---
+# vars file for hadenlabs.java
+
+# _hadenlabs.java_create_files:
+
+#   - path: "{{ _path_dir }}"
+#     state: "directory"
+#     # group: "root"
+#     owner: "{{ user }}"
+
+
+# _hadenlabs.java:
+#   templates:
+#     - src: "default.j2"
+#       dest: {{ _hadenlabs.java_file }}

@@ -1,0 +1,9 @@
+---
+# vars file for hadenlabs.java (Ubuntu specific)
+
+_java_package_dependencies:
+  - build-essential
+
+
+_java_packages:
+  - packages

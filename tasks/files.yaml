@@ -1,0 +1,12 @@
+---
+# environment file for hadenlabs.java
+
+- name: Create files java
+  sudo: yes
+  file:
+    path: "{{ item.path }}"
+    state: "{{ item.state }}"
+    owner: "{{ item.owner }}"
+  with_items: _java_create_files
+  when:
+    - _java_create_files is defined

@@ -1,5 +1,5 @@
 -   repo: git@github.com:pre-commit/pre-commit-hooks
-    sha: 7539d8bd1a00a3c1bfd34cdb606d3a6372e83469
+    sha: 286962eeb7af67f321b94a22e8edbd3004b1810e
     hooks:
     -   id: detect-private-key
         files: ^(?!\.?git-crypt)
@@ -35,7 +35,7 @@
     -   id: requirements-txt-fixer
     -   id: name-tests-test
 -   repo: git://github.com/pre-commit/mirrors-pylint
-    sha: v1.6.4
+    sha: v1.7.2
     hooks:
     -   id: pylint
         language_version: python3
@@ -43,22 +43,22 @@
         - --rcfile=.pylintrc
         exclude: setup.py
 -   repo: git://github.com/pre-commit/mirrors-scss-lint
-    sha: v0.50.2
+    sha: v0.54.0
     hooks:
     -   id: scss-lint
         files: \.(scss)$
 -   repo: git@github.com:pre-commit/pre-commit
-    sha: v0.9.4
+    sha: 1a07a24d13823d00a46a2536f9b9484596989f61
     hooks:
     -   id: validate_config
     -   id: validate_manifest
 -   repo: git://github.com/FalconSocial/pre-commit-python-sorter
-    sha: 1.0.4
+    sha: b57843b0b874df1d16eb0bef00b868792cb245c2
     hooks:
     -   id: python-import-sorter
         args:
         - --silent-overwrite
 -   repo: git://github.com/detailyang/pre-commit-shell
-    sha: 1fdffa0434cde2b87f19ad258201d3e81481af5f
+    sha: 75af325c913743d7abf2ff6fd71dfbf9490bd8b4
     hooks:
     -   id: shell-lint

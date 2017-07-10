@@ -20,8 +20,7 @@
   register: install_java_package_dependencies
   when:
     - _java_package_dependencies is defined
-  with_items:
-    - _{{ _java_package_dependencies | default([]) }}
+  with_items: "{{ _java_package_dependencies | default([]) }}"
   tags:
     - packages
     - dependencies

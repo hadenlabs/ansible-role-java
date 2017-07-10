@@ -1,2 +1,4 @@
 ---
 # defaults file for hadenlabs.java
+
+java_version: 7

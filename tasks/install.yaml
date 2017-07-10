@@ -1,13 +1,19 @@
 ---
 # task for hadenlabs.java
 
-- include: install.d/CentOS.yaml
-  when: ansible_os_family == "Redhat"
+- name: Ensure apt cache is up to date
+  apt:
+    update_cache: yes
+  when:
+    - ansible_os_family == "Debian"
   tags:
     - java
 
-- include: install.d/Ubuntu.yaml
-  when:
-    - ansible_os_family == "Debian"
+
+- name: Install java dependencies
+  package:
+    name={{ item }}
+    state=latest
+  with_items: "{{ _java_packages | default([]) }}"
   tags:
     - java

@@ -3,7 +3,8 @@
 
 _java_package_dependencies:
   - build-essential
+  - git
 
 
 _java_packages:
-  - packages
+  - "openjdk-{{ java_version }}-jdk"

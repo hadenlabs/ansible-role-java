@@ -1,5 +1,5 @@
 ---
-# vars file for hadenlabs.java (Ubuntu specific)
+# vars file for labpositiva.java (Ubuntu specific)
 
 _java_package_dependencies:
   - build-essential

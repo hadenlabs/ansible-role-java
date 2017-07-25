@@ -1,5 +1,5 @@
 ---
-# vars file for hadenlabs.java (CentOS specific)
+# vars file for labpositiva.java (CentOS specific)
 
 _java_package_dependencies:
   - build-essential
